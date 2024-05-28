@@ -57,23 +57,21 @@ h3 {
 }
 
 h4 {
-  font-size: 1em; /* حجم الخط للعناوين h4 */
+  font-size: 0.9em; /* حجم الخط للعناوين h4 */
 }
 
-h5 {
-  font-size: 1.25em; /* حجم الخط للعناوين h5 */
-}
 
 p {
-  margin: 10px 0; /* تقليل المسافة بين الفقرات */
+  margin: 0.5em; /* تقليل المسافة بين الفقرات */
 }
 
 .logo img {
-  max-width: 100px;
+  max-width: 10em;
   height: auto;
   background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
   border-radius: 50%; /* جعل الخلفية دائرية */
-  padding: 10px; /* إضافة بعض المسافة حول الصورة */
+  padding: 2%; /* إضافة بعض المسافة حول الصورة */
+  
 }
 
 .container {
@@ -83,8 +81,10 @@ p {
 }
 
 .main-image img {
-  width: 90%; /* تم تغيير حجم الصورة الرئيسية */
-  height: auto;
+  width: 100%; /* تم تغيير حجم الصورة الرئيسية */
+  height: 80%;
+  margin-top: 10% /* تقليل المسافة بين الفقرات */
+
 }
 
 .overlay {
@@ -100,7 +100,7 @@ p {
 }
 
 .sub-image {
-  width: 27%;
+  width: 30%;
   height: auto;
   border-radius: 5%;
   cursor: pointer;
@@ -113,14 +113,14 @@ p {
 
 .top-left {
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: -22%;
 }
 
 .top-right {
   position: absolute;
-  top: -5%;
-  right: -5%;
+  top: 4%;
+  right: -17%;
 }
 
 .bottom-left {
@@ -132,7 +132,7 @@ p {
 .bottom-right {
   position: absolute;
   bottom: 5%;
-  right: -14%;
+  right: -25%;
 }
 
 footer {
@@ -142,7 +142,7 @@ footer {
 
 .footer-content {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1; /* تقليل ارتفاع الخط في الفوتر */
 }
 
@@ -154,12 +154,12 @@ footer {
   display: flex;
   justify-content: left; /* تعديل التموضع ليكون في المنتصف */
   align-items: flex-start; /* تعديل التموضع ليكون في الأعلى */
-  margin-top: -36%; /* تقليل المسافة العلوية */
+  margin-top: -30%; /* تقليل المسافة العلوية */
 }
 
 .slanted-images img {
-  width: 90px; /* تكبير حجم الصور المصغرة */
-  height: 90px; /* تكبير حجم الصور المصغرة */
+  width: 8%; /* تكبير حجم الصور المصغرة */
+  height: 8%; /* تكبير حجم الصور المصغرة */
   margin: 0 10px; /* إضافة بعض المسافة بين الصور */
   transform: rotate(-15deg);
   transition: transform 0.3s ease-in-out;
