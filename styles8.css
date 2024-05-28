@@ -8,23 +8,23 @@ body {
 }
 
 header {
-    height: 40%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+  height: 70%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 header img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 .header-content {
-        position: absolute;
-        bottom: 0; /* العنوان أسفل صورة الهيدر */
-        left: 0;
-        width: 100%;
-        text-align: center;
+      position: absolute;
+      bottom: 0; /* العنوان أسفل صورة الهيدر */
+      left: 0;
+      width: 100%;
+      text-align: center;
 }
 
 h1,h1,h2,h3,h4{
