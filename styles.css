@@ -29,10 +29,9 @@ body::before {
 }
 
 header {
-  
   position: absolute;
-  top: -8%; /* زيادة المسافة العلوية قليلاً */
-  right: 10px; /* زيادة المسافة اليمنى قليلاً */
+  top: 1%; /* تعديل المسافة العلوية */
+  right: 1%; /* تعديل المسافة اليمنى */
   padding: 10px;
 }
 
@@ -60,18 +59,16 @@ h4 {
   font-size: 0.9em; /* حجم الخط للعناوين h4 */
 }
 
-
 p {
   margin: 0.5em; /* تقليل المسافة بين الفقرات */
 }
 
 .logo img {
-  max-width: 10em;
+  width: 10vw; /* حجم نسبي للوجو */
   height: auto;
   background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
   border-radius: 50%; /* جعل الخلفية دائرية */
   padding: 2%; /* إضافة بعض المسافة حول الصورة */
-  
 }
 
 .container {
@@ -83,8 +80,7 @@ p {
 .main-image img {
   width: 100%; /* تم تغيير حجم الصورة الرئيسية */
   height: 80%;
-  margin-top: 10% /* تقليل المسافة بين الفقرات */
-
+  margin-top: 10%; /* تقليل المسافة بين الفقرات */
 }
 
 .overlay {
@@ -158,8 +154,8 @@ footer {
 }
 
 .slanted-images img {
-  width: 8%; /* تكبير حجم الصور المصغرة */
-  height: 8%; /* تكبير حجم الصور المصغرة */
+  width: 8vw; /* تكبير حجم الصور المصغرة */
+  height: 8vw; /* تكبير حجم الصور المصغرة */
   margin: 0 10px; /* إضافة بعض المسافة بين الصور */
   transform: rotate(-15deg);
   transition: transform 0.3s ease-in-out;
@@ -171,7 +167,6 @@ footer {
 .slanted-images img:hover {
   transform: rotate(-15deg) scale(1.1);
 }
-
 
 /* نمط النافذة المنبثقة (modal) */
 .modal {
@@ -209,4 +204,45 @@ footer {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Media Queries لتعديل التصميم على أحجام الشاشات المختلفة */
+@media (max-width: 1200px) {
+  .logo img {
+    width: 12vw;
+  }
+  .slanted-images img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    width: 14vw;
+  }
+  .slanted-images img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 16vw;
+  }
+  .slanted-images img {
+    width: 14vw;
+    height: 14vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    width: 18vw;
+  }
+  .slanted-images img {
+    width: 16vw;
+    height: 16vw;
+  }
 }
