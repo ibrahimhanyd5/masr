@@ -21,7 +21,8 @@ header img {
 
 .header-content {
         position: absolute;
-        bottom: 0; /* العنوان أسفل صورة الهيدر */
+        bottom: 0;
+        top: 10%;
         left: 0;
         width: 100%;
         text-align: center;
