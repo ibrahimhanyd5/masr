@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    height: 70vh;
+    height: 40%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -42,9 +42,9 @@ main {
 }
 
 .interactive-image {
-        width: calc(200px + 15%);
+        width: calc(70% + 15%);
         height: auto;
-    margin: 5 px;
+    margin: 7%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     border-radius: 50%; /* جعل الصورة دائرية */
