@@ -64,7 +64,7 @@ p {
 }
 
 .logo img {
-  width: 10vw; /* حجم نسبي للوجو */
+  width: 8vw; /* حجم نسبي للوجو */
   height: auto;
   background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
   border-radius: 50%; /* جعل الخلفية دائرية */
