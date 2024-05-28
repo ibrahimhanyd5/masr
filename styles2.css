@@ -1,0 +1,93 @@
+body {
+    margin: 5px;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: justify; /* محاذاة النص إلى اليمين */
+}
+
+header {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    position: absolute;
+    bottom: 0; /* العنوان أسفل صورة الهيدر */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+    padding: 5px 10px;
+    font-size: 38px; /* تكبير حجم العنوان */
+}
+
+main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* هذا يحدد محور مركزي للعناصر بحيث تكون بجانب بعضها */
+    padding: 20px 0;
+}
+
+.interactive-image {
+        width: calc(200px + 15%);
+        height: auto;
+    margin: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%; /* جعل الصورة دائرية */
+    object-fit: cover; /* لضمان أن الصورة تملأ الحاوية الدائرية بشكل صحيح */
+}
+
+.interactive-image:hover {
+    transform: scale(1.1);
+}
+
+.image-caption {
+    color: red;
+    font-family: Kafa, Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid orange; /* تحديد لون الحدود وعرضه */
+        padding: 5% 0; /* إضافة مسافة داخلية للفوتر */
+}
+
+
+.footer-content {
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: right;
+    font-size: 22px;
+    line-height: 1.6; /* جعل نهايات السطور واحدة */
+}

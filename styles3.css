@@ -1,0 +1,115 @@
+body {
+  margin: 5px; /* هوامش الصفحة بقيمة 5 بكسل */
+  padding: 0;
+  background-color: black; /* الخلفية باللون الأسود */
+  color: white;
+  font-family: Arial, sans-serif; /* فونت النص */
+  text-align: justify; /* محاذاة النص إلى اليمين */
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.header-content {
+        position: absolute;
+        bottom: 0; /* العنوان أسفل صورة الهيدر */
+        left: 0;
+        width: 100%;
+        text-align: center;
+}
+
+h1,h1,h2,h3,h4{
+    color: red; /* اللون الأحمر */
+    font-family: kafa; /* فونت العنوان */
+   background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+   padding: 5px 10px;
+    font-size: 2.5em; /* حجم الخط للعناوين h1 */
+  }
+  
+  h2 {
+    font-size: 2em; /* حجم الخط للعناوين h2 */
+  }
+  
+  h3 {
+    font-size: 1.75em; /* حجم الخط للعناوين h3 */
+  }
+  
+  h4 {
+    font-size: 1.5em; /* حجم الخط للعناوين h4 */
+  }
+  
+  h5 {
+    font-size: 1.25em; /* حجم الخط للعناوين h5 */
+  }
+  
+
+
+
+main {
+  width: 100%;
+  text-align: right;
+}
+
+main p {
+  text-align: right; /* محاذاة النص إلى اليمين ونهايات السطور متساوية */
+  padding: 0 10px; /* هامش بدايات ونهايات السطور */
+}
+
+img {
+  width: 80%; /* عرض الصورة بنسبة 80% من مساحة الصفحة */
+  display: block;
+  margin: 0 auto; /* توسيط الصورة */
+}
+
+.text-section {
+  margin-top: 20px; /* هامش أعلى لقسم النص */
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid orange; /* تحديد لون الحدود وعرضه */
+        padding: 20px 0; /* إضافة مسافة داخلية للفوتر */
+}
+
+.footer-content {
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+ul.sources {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul.sources li {
+    font-size: 0.8em; /* حجم الخط صغير */
+    color: orange; /* لون الخط برتقالي */
+    margin: 5px 0; /* مسافة بين العناصر */
+    font-weight: bold;
+  }
+p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: right justify;
+    font-size: 20px;
+    line-height: 1.6; /* جعل نهايات السطور واحدة */
+}

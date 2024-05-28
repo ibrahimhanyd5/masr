@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: justify;
+  position: relative;
+  min-height: 100vh;
+  background-image: url('sh1/p1.png'); /* استبدل هذا بمسار الصورة الخلفية */
+  background-repeat: repeat; /* السماح بتكرار الصورة */
+  background-position: top left; /* يمكنك تعديل هذا لتغيير موضع بداية التكرار */
+  line-height: 1.4; /* تقليل ارتفاع الخط لتقليل المسافة بين الأسطر */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.96); /* الخلفية السوداء الشفافة */
+  z-index: 1;
+}
+
+.container, .footer-content, header {
+  position: relative;
+  z-index: 2; /* لضمان أن المحتوى فوق الخلفية الشفافة */
+}
+
+header {
+  
+  position: absolute;
+  top: -8%; /* زيادة المسافة العلوية قليلاً */
+  right: 10px; /* زيادة المسافة اليمنى قليلاً */
+  padding: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: red; /* اللون الأحمر */
+  font-family: kafa; /* فونت العنوان */
+  background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+  padding: 5px 10px;
+  margin: 0; /* إزالة الهامش لتقليل المسافة بين العناوين */
+}
+
+h1 {
+  font-size: 2.5em; /* حجم الخط للعناوين h1 */
+}
+
+h2 {
+  font-size: 2em; /* حجم الخط للعناوين h2 */
+}
+
+h3 {
+  font-size: 1.75em; /* حجم الخط للعناوين h3 */
+}
+
+h4 {
+  font-size: 1em; /* حجم الخط للعناوين h4 */
+}
+
+h5 {
+  font-size: 1.25em; /* حجم الخط للعناوين h5 */
+}
+
+p {
+  margin: 10px 0; /* تقليل المسافة بين الفقرات */
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية سوداء شفافة */
+  border-radius: 50%; /* جعل الخلفية دائرية */
+  padding: 10px; /* إضافة بعض المسافة حول الصورة */
+}
+
+.container {
+  position: relative;
+  width: 40%; /* تم تغيير العرض لتكون 40% */
+  margin: 5% auto;
+}
+
+.main-image img {
+  width: 90%; /* تم تغيير حجم الصورة الرئيسية */
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sub-image {
+  width: 27%;
+  height: auto;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-image:hover {
+  transform: scale(1.1);
+}
+
+.top-left {
+  position: absolute;
+  top: 0%;
+  left: -22%;
+}
+
+.top-right {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0%;
+  left: -10%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5%;
+  right: -14%;
+}
+
+footer {
+  margin-top: 0;
+  text-align: center;
+}
+
+.footer-content {
+  color: white;
+  font-size: 18px;
+  line-height: 1; /* تقليل ارتفاع الخط في الفوتر */
+}
+
+.orange-line {
+  border: 1px solid orange;
+}
+
+.slanted-images {
+  display: flex;
+  justify-content: left; /* تعديل التموضع ليكون في المنتصف */
+  align-items: flex-start; /* تعديل التموضع ليكون في الأعلى */
+  margin-top: -36%; /* تقليل المسافة العلوية */
+}
+
+.slanted-images img {
+  width: 90px; /* تكبير حجم الصور المصغرة */
+  height: 90px; /* تكبير حجم الصور المصغرة */
+  margin: 0 10px; /* إضافة بعض المسافة بين الصور */
+  transform: rotate(-15deg);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.slanted-images img:hover {
+  transform: rotate(-15deg) scale(1.1);
+}
+
+
+/* نمط النافذة المنبثقة (modal) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
