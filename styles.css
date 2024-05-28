@@ -30,7 +30,7 @@ body::before {
 
 header {
   position: absolute;
-  top: 1%; /* تعديل المسافة العلوية */
+  top: -4%; /* تعديل المسافة العلوية */
   right: 1%; /* تعديل المسافة اليمنى */
   padding: 10px;
 }
