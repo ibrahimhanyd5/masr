@@ -22,11 +22,11 @@ h1,h1,h2,h3,h4{
   
   h3 {
     font-size: 1.75em; /* حجم الخط للعناوين h3 */
-    direction: rtl;
   }
   
   h4 {
-    font-size: 1.5em; /* حجم الخط للعناوين h4 */
+     font-size: 1.75em; /* حجم الخط للعناوين h3 */
+    direction: rtl;
   }
   
   h5 {
