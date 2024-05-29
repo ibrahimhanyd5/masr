@@ -107,7 +107,9 @@ p {
     margin-bottom: 40px;
     margin-right: 10%;
     margin-left: 10%;
-    text-align: right justify;
+     text-align: right;
+    direction: rtl;
+    text-align: justify;
     font-size: 20px;
     line-height: 1.6; /* جعل نهايات السطور واحدة */
 }
