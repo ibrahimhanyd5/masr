@@ -4,10 +4,35 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: justify; 
+    text-align: justify; /* محاذاة النص إلى اليمين */
 }
 
-
+h1,h1,h2,h3,h4{
+    color: red; /* اللون الأحمر */
+    font-family: kafa; /* فونت العنوان */
+   background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+   padding: 5px 10px;
+    font-size: 2.5em; /* حجم الخط للعناوين h1 */
+   
+  }
+  
+  h2 {
+    font-size: 2em; /* حجم الخط للعناوين h2 */
+  }
+  
+  h3 {
+    font-size: 1.75em; /* حجم الخط للعناوين h3 */
+    direction: rtl;
+  }
+  
+  h4 {
+    font-size: 1.5em; /* حجم الخط للعناوين h4 */
+  }
+  
+  h5 {
+    font-size: 1.25em; /* حجم الخط للعناوين h5 */
+  }
+  
 header {
     height: 40%;
     width: 100%;
@@ -27,33 +52,6 @@ header img {
     width: 100%;
     text-align: center;
 }
-
-h1,h1,h2,h3,h4{
-    color: red; /* اللون الأحمر */
-    font-family: kafa; /* فونت العنوان */
-   background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
-   padding: 5px 10px;
-    font-size: 2.5em; /* حجم الخط للعناوين h1 */
-  }
-  
-  h2 {
-    font-size: 2em; /* حجم الخط للعناوين h2 */
-  }
-  
-  h3 {
-    font-size: 1.75em; /* حجم الخط للعناوين h3 */
-       direction: rtl;
-  }
-  
-  h4 {
-    font-size: 1.5em; /* حجم الخط للعناوين h4 */
-   
-  }
-  
-  h5 {
-    font-size: 1.25em; /* حجم الخط للعناوين h5 */
-  }
-  
 
 main {
         display: flex;
