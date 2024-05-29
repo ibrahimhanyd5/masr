@@ -4,7 +4,13 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: justify; /* محاذاة النص إلى اليمين */
+   text-align: right; /* محاذاة النص إلى اليمين */
+    direction: rtl; /* جعل الاتجاه من اليمين إلى اليسار */
+}
+
+.info-section {
+    margin-top: 50px;
+    text-align: right; /* تأكيد المحاذاة إلى اليمين */
 }
 
 header {
@@ -27,11 +33,29 @@ header img {
     text-align: center;
 }
 
-h1 {
-    color: red;
-    background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
-    padding: 5px 10px;
-    font-size: 38px; /* تكبير حجم العنوان */
+h1,h1,h2,h3,h4{
+    color: red; /* اللون الأحمر */
+    font-family: kafa; /* فونت العنوان */
+   background-color: rgba(0, 0, 0, 0.8); /* خلفية سوداء شفافة */
+   padding: 5px 10px;
+    font-size: 2.5em; /* حجم الخط للعناوين h1 */
+  }
+  
+  h2 {
+    font-size: 2em; /* حجم الخط للعناوين h2 */
+  }
+  
+  h3 {
+    font-size: 1.75em; /* حجم الخط للعناوين h3 */
+  }
+  
+  h4 {
+    font-size: 1.5em; /* حجم الخط للعناوين h4 */
+  }
+  
+  h5 {
+    font-size: 1.25em; /* حجم الخط للعناوين h5 */
+  }
 }
 
 main {
@@ -93,6 +117,13 @@ p {
     font-size: 22px;
     line-height: 1.6; /* جعل نهايات السطور واحدة */
 }
+}
+
+.arrow {
+    font-size: 24px;
+    color: #ec0c04;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 @media (max-width: 1200px) {
