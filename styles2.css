@@ -4,14 +4,9 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: right; /* محاذاة النص إلى اليمين */
-    direction: rtl; /* جعل الاتجاه من اليمين إلى اليسار */
+    text-align: justify; 
 }
 
-.info-section {
-    margin-top: 50px;
-    text-align: right; /* تأكيد المحاذاة إلى اليمين */
-}
 
 header {
     height: 40%;
@@ -51,6 +46,7 @@ h1,h1,h2,h3,h4{
   
   h4 {
     font-size: 1.5em; /* حجم الخط للعناوين h4 */
+    direction: rtl;
   }
   
   h5 {
@@ -118,11 +114,7 @@ p {
     line-height: 1.6; /* جعل نهايات السطور واحدة */
 }
 
-.arrow {
-    font-size: 24px;
-    color: #ec0c04;
-    margin-right: 10px;
-    vertical-align: middle;
+
 }
 @media (max-width: 1200px) {
     h1 {
