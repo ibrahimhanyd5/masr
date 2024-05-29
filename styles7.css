@@ -87,7 +87,9 @@ p {
     margin-bottom: 10px;
     margin-right: 10%;
     margin-left: 10%;
-    text-align: right;
+     text-align: right;
+    direction: rtl;
+    text-align: justify;
     font-size: 22px;
     line-height: 1.6; /* جعل نهايات السطور واحدة */
 }
